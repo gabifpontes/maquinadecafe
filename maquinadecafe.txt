@@ -1,0 +1,59 @@
+#include <iostream>
+
+using namespace std;
+
+int main(int, char) {
+
+	char opc;
+
+	while (true)
+	{
+		system("cls");
+
+		cout << "Digite a letra para escolher seu tipo de cafe: \n"
+			"e espresso\n"
+			"p pingado\n"
+			"b breakfast\n"
+			"l longo\n"
+			"c capuccino\n"
+			"m lattemacchiatto\n";
+
+		cin >> opc;
+
+		system("cls");
+
+		switch (opc)
+		{
+			case 'e':
+				cout << "Seu cafe espresso já está pronto!\n\n";
+				system("pause");
+				break;
+			case 'p':
+				cout << "Seu cafe pingado já está pronto!\n\n";
+				system("pause");
+				break;
+			case 'b':
+				cout << "Seu cafe braskfast já está pronto!\n\n";
+				system("pause");
+				break;
+			case 'l':
+				cout << "Seu cafe longo já está pronto!\n\n";
+				system("pause");
+				break;
+			case 'c':
+				cout << "Seu cafe capuccino já está pronto!\n\n";
+				system("pause");
+				break;
+			case 'm':
+				cout << "Seu cafe lattemacchiatto já está pronto!\n\n";
+				system("pause");
+				break;
+			default:
+				cout << "Escolha inválida\n\n";
+				system("pause");
+				break;
+		}
+	}
+	
+	return 0;
+}
